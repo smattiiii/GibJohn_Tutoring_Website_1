@@ -12,21 +12,29 @@ html {
 }
 
 body {
-  font-family: Consolas, "Andale Mono", monospace;
+  font-family: Arial, sans-serif;
   margin: 0;
   background-color: #e6f2f1;
+}
+
+.navbar{
+  background-color: #77c4b0 ;
 }
 
 .container-fluid {
   background-color: #77c4b0;
 }
 
+.highlight_1 {
+  color: #ffffff;
+}
+
 .highlight {
   color: #8a77c4;
 }
 
-.navbar-brand {
-  align-items: center;
+.nav-item {
+  text-decoration: underline;
 }
 
 .container {
@@ -36,14 +44,28 @@ body {
 
 .bar {
   background-color: #ffffff;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
+  
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  transition: 0.5s ease;
 }
 
 .bar h1 {
-  margin: 0;
+
+  
   font-size: 18px;
+  
   color: #77c4b0;
+  font-weight: 800;
+  text-align: right;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
 }
 
 .home_image {
