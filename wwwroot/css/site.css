@@ -2,12 +2,6 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -18,5 +12,70 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  font-family: Consolas, "Andale Mono", monospace;
+  margin: 0;
+  background-color: #e6f2f1;
+}
+
+.container-fluid {
+  background-color: #77c4b0;
+}
+
+.highlight {
+  color: #8a77c4;
+}
+
+.navbar-brand {
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.bar {
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+}
+
+.bar h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #77c4b0;
+}
+
+.home_image {
+  height: 300px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.content {
+  background-color: #77c4b0;
+  padding: 40px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.highlight {
+  color: #8a77c4;
 }
