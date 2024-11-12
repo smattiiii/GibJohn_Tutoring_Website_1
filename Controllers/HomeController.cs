@@ -24,7 +24,7 @@ namespace GibJohn_Tutoring_Website_1.Controllers
             return View();
         }
 
-        [Authorize]
+        
         public IActionResult Dashboard()
         {
             return View();
