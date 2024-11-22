@@ -24,12 +24,17 @@ namespace GibJohn_Tutoring_Website_1.Controllers
             return View();
         }
 
-        [Authorize]
         public IActionResult Dashboard()
         {
-            return View();
+            // Example data
+            var chartData = new
+            {
+                Labels = new[] { "Courses Completed", "Resources Completed", "Sessions Completed", "Quizzes Completed" },
+                Values = new[] { 20, 15, 30, 10 }
+            };
+
+            return View(chartData);
         }
-        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using GibJohn_Tutoring_Website_1.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace GibJohn_Tutoring_Website_1.Data
@@ -9,5 +10,6 @@ namespace GibJohn_Tutoring_Website_1.Data
             : base(options)
         {
         }
+        public DbSet<ClickData> ClickData { get; set; }
     }
 }
